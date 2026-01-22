@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uy sharoitida kimyoviy tajribalar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="video-bg">
+    <video autoplay muted loop>
+      <source src="lab-background.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <header>
+    <h1>Uy sharoitida kimyoviy tajribalar</h1>
+    <p>Foydali, xavfsiz va interaktiv tajribalar bilan o‘rganamiz!</p>
+  </header>
+
+  <main>
+ 
+    <section class="reaction" id="sirka-soda">
+      <h2>Sirka + Soda</h2>
+      <p class="description">Gaz hosil bo‘ladi va pufakchalar paydo bo‘ladi — bu kimyoviy reaksiya belgisi!</p>
+      <ul>
+        <li><strong>Reaksiya turi:</strong> Kimyoviy</li>
+        <li><strong>Belgilar:</strong> Favora, gaz ajralishi</li>
+        <li><strong>Xavfsizlik:</strong> Ochiq joyda qilish</li>
+      </ul>
+      <button onclick="startSirkaSoda()">Animatsiyani boshlash</button>
+      <div class="bubbles"></div>
+      <div class="tooltip">Sirka va soda aralashganda karbonat angidrid gaz hosil qiladi.</div>
+    </section>
+
+    
+    <section class="reaction" id="cola-mentos">
+      <h2>Cola + Mentos</h2>
+      <p class="description">Tez favora! Fizik hodisa, lekin juda qiziqarli ko‘rinadi.</p>
+      <ul>
+        <li><strong>Reaksiya turi:</strong> Fizik</li>
+        <li><strong>Belgilar:</strong> Favora, gaz tez ajraladi</li>
+        <li><strong>Xavfsizlik:</strong> Ochiq joyda, yuzga yaqin tutmang</li>
+      </ul>
+      <button onclick="startColaMentos()">Favora boshlash</button>
+      <div class="bubbles"></div>
+      <div class="tooltip">Gaz tez ajraladi va favora hosil bo‘ladi.</div>
+    </section>
+
+ 
+    <section class="reaction" id="sut-limon">
+      <h2>Sut + Limon</h2>
+      <p class="description">Cho‘kma hosil bo‘ladi. Bu kimyoviy reaksiya belgisi!</p>
+      <ul>
+        <li><strong>Reaksiya turi:</strong> Kimyoviy</li>
+        <li><strong>Belgilar:</strong> Cho‘kma, rang o‘zgarishi</li>
+        <li><strong>Xavfsizlik:</strong> Eshikni ochiq qoldiring</li>
+      </ul>
+      <button onclick="startSutLimon()">Cho‘kmani ko‘rsat</button>
+      <div class="bubbles"></div>
+      <div class="tooltip">Sut kislota bilan reaksiyaga kirishadi va cho‘kma hosil bo‘ladi.</div>
+    </section>
+
+    <section class="reaction" id="temir-zang">
+      <h2>Temir zanglashi</h2>
+      <p class="description">Temir havo va suv bilan reaksiyaga kirishadi va qizil rangli temir oksidi hosil bo‘ladi.</p>
+      <ul>
+        <li><strong>Reaksiya turi:</strong> Oksidlanish (kimyoviy)</li>
+        <li><strong>Belgilar:</strong> Rang o‘zgarishi, qattiq modda hosil bo‘lishi</li>
+        <li><strong>Xavfsizlik:</strong> Qo‘lqop kiying</li>
+      </ul>
+      <button onclick="startTemirZang()">Animatsiyani ko‘rsat</button>
+      <div class="bubbles"></div>
+      <div class="tooltip">Temir oksidlanadi va qizil rang hosil qiladi.</div>
+    </section>
+
+   
+    <section class="reaction" id="muz-erish">
+      <h2>Muz erishi</h2>
+      <p class="description">Muz suyuq bo‘ladi, ammo yangi modda hosil bo‘lmaydi.</p>
+      <ul>
+        <li><strong>Reaksiya turi:</strong> Fizik</li>
+        <li><strong>Belgilar:</strong> Suyuqlik hosil bo‘lishi</li>
+        <li><strong>Xavfsizlik:</strong> Oddiy suv bilan tajriba</li>
+      </ul>
+      <button onclick="startMuzErish()">Animatsiyani boshlash</button>
+      <div class="bubbles"></div>
+      <div class="tooltip">Muz faqat eriydi, fizik jarayon.</div>
+    </section>
+
+   
+    <section class="reaction" id="sham-yonishi">
+      <h2>Sham yonishi</h2>
+      <p class="description">Yonish jarayonida yorug‘lik, issiqlik va gaz hosil bo‘ladi.</p>
+      <ul>
+        <li><strong>Reaksiya turi:</strong> Kimyoviy</li>
+        <li><strong>Belgilar:</strong> Issiqlik, yorug‘lik, gaz</li>
+        <li><strong>Xavfsizlik:</strong> Ota-onaga yoki kattaga nazorat ostida</li>
+      </ul>
+      <button onclick="startShamYonishi()">Animatsiyani boshlash</button>
+      <div class="bubbles"></div>
+      <div class="tooltip">Sham yonadi va issiqlik, yorug‘lik hosil qiladi.</div>
+    </section>
+  </main>
+
+  <footer>
+   <p> &copy; 2026 Uy sharoitida kimyoviy tajribalar</p><br>
+   <p> tabiy fandan 2-guruh amaliy ishi, muollif:E.Nurmuhammad</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
